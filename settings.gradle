@@ -1,0 +1,4 @@
+rootProject.name = 'dubbo'
+include "service"
+include "zkprovider"
+include "zkconsumer"
