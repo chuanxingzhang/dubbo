@@ -19,10 +19,11 @@ repositories {
 }
 
 dependencies {
-    compile project(":zkprovider")
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
+    compile 'com.alibaba.spring.boot:dubbo-spring-boot-starter:2.0.0'
+    compile group: 'com.101tec', name: 'zkclient', version: '0.10'
 }
 
 test {
